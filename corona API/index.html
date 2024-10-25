@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corona API</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>Corona Reports</h1>
+            <div class="">
+                <select class="select" id="country">
+                    <option value="IN" select="selected">India</option>
+                </select>
+            </div>
+            <div>
+                <select class="select" id="state" onchange="findState();">Select Your State</select>
+            </div>
+            <div>
+                <select class="select" id="city" onchange="findCity();"></select>
+            </div>
+            <div class="corna" id="corona">
+                <div class="reports">
+                    <div>
+                        <p class="confirm" id="confirm"></p>
+                        <P class="title">Confirmed</P>
+                    </div>
+                    <div>
+                        <p class="confirm" id="tested"></p>
+                        <P class="title">Tested</P>
+                    </div>
+                    <div>
+                        <p class="confirm" id="recovered"></p>
+                        <P class="title">Recovered</P>
+                    </div>
+                    <div>
+                        <p class="confirm" id="vaccinated"></p>
+                        <P class="title">Vaccinated</P>
+                    </div>
+                    <div>
+                        <p class="confirm" id="deceased"></p>
+                        <P class="title">Deceased</P>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jquery -->
+    <script src="assets/js/jquery.js"></script>
+    <!-- js -->
+    <script src="assets/js/main.js"></script>
+    
+</body>
+
+</html>
